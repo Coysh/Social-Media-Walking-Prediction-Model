@@ -1,10 +1,10 @@
 <?php
-$backenddb = new PDO('mysql:host=localhost;dbname=crimetim_backend;charset=utf8', 'crimetim_backend', 'b=GXS?XZprifePA~eO');
+$backenddb = new PDO('mysql:host=localhost;dbname=crimetim_backend;charset=utf8', 'crimetim_backend', '---');
 $backenddb->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-$locationsdb = new PDO('mysql:host=localhost;dbname=crimetim_locations;charset=utf8', 'crimetim_locatio', 'OvN-]ia$S[}6;8ec9I');
-$crimedb = new PDO('mysql:host=localhost;dbname=crimetim_crime;charset=utf8', 'crimetim_crime', ']e2Z!4z@30{nw[n-eK');
-$resultsdb = new PDO('mysql:host=localhost;dbname=crimetim_results;charset=utf8', 'crimetim_results', '&b3k!8K(QM[-Qnx~m&');
+$locationsdb = new PDO('mysql:host=localhost;dbname=crimetim_locations;charset=utf8', 'crimetim_locatio', '---');
+$crimedb = new PDO('mysql:host=localhost;dbname=crimetim_crime;charset=utf8', 'crimetim_crime', '---');
+$resultsdb = new PDO('mysql:host=localhost;dbname=crimetim_results;charset=utf8', 'crimetim_results', '---');
 
 require_once('KLogger.php');
 $sitelog = new KLogger('/home/crimetimcoyshco/public_html/log/', KLogger::ERR);
